@@ -5,4 +5,4 @@ If the ZFS volumes are defined on encrypted disks, they are not mounted on start
 
 When the encrypted disks are attached, the da2.eli & da3.eli files are created and correspond to these devices. The script is just a simple loop that checks the existence of these two files every 2 seconds. When the script detects them then it issues the zfs mount -a command in order to mount all the ZFS volumes.
 
-If your encryoted disk array containms more disks, just add the respective file name in the if condition. 
+If your encrypted disk array contains more disks, just add the respective file name in the if condition. 
