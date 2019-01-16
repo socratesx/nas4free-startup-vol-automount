@@ -1,4 +1,4 @@
-# nas4free-startup-vol-automount
+# XigmaNas/nas4free-startup-vol-automount
 This simple script automounts the ZFS volumes that are created on encrypted disks. 
 
 If the ZFS volumes are defined on encrypted disks, they are not mounted on startup after a reboot of the nas4free/Xigmanas server. This is because the disks must be manually attached using the secret encryption passphrase. In my occasion the volumes didn't mount after the manual disk attachment. So, I created this simple script to automate this procedure. The script assumes that there are two encrypted disks on the system (da2.eli & da3.eli), you can modify it according to your device names. You can easily check the names of your devices when you attach the disks from the web interface.
